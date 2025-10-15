@@ -21,7 +21,7 @@ Program ini merupakan simulasi sederhana untuk mengelola pemesanan kamar hotel m
   Menyimpan daftar semua kamar dalam bentuk ArrayList. Untuk mencari kamar berdasarkan tipe (Standar, Deluxe, Suite). Menghitung total biaya menginap berdasarkan durasi dan harga kamar per malam.
 4. Main :
    Berfungsi sebagai pusat eksekusi program. Menggunakan Scanner agar pengguna dapat menginput data sendiri, seperti nama tamu, durasi menginap, dan pilihan tipe kamar (1 untuk Standar, 2 untuk Deluxe, 3 untuk Suite). Setelah pemesanan berhasil, program menampilkan total harga yang harus dibayar dan daftar kamar yang sudah dipesan maupun yang masih kosong.
-# Fungsi Utama Program
+### Fungsi Utama Program
 1. Menampilkan daftar kamar hotel dengan tipe dan harga berbeda.
 2. Memungkinkan pengguna memilih tipe kamar menggunakan angka (1–3).
 3. Menghitung total biaya secara otomatis setelah pemesanan.
