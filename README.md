@@ -1,6 +1,6 @@
 # SISTEM PEMESANAN KAMAR HOTEL
 Hotel ingin membuat sistem untuk mengelola pemesanan kamar oleh tamu dengan berbagai tipe kamar.
-# Anggota Kelompok
+## Anggota Kelompok
 1. Ahmad Najib Ramadhan	(G1A025022)
 2. M. Daffa  Atallah Putra	(G1A025044)
 3. Aurel Clara Belinda Putri	(G1A025070)
@@ -30,4 +30,45 @@ Program ini merupakan simulasi sederhana untuk mengelola pemesanan kamar hotel m
 - Visual Studio Code
 - Java JDK 21
 - Terminal
+## Fitur Sistem
+- Mengelola Data Kamar Hote
+- Mencatat Data Tamu
+- Melakukan Pemesanan Kamar
+- Menghitung Total Biaya Menginap
+- Menampilkan Daftar Kamar dan Statusnya 
+## Struktur Program
+src/
+├── Kamar.java → Class untuk menyimpan data kamar (nomor, tipe, harga, status)
+├── Tamu.java → Class untuk menyimpan data tamu (nama, durasi menginap)
+├── Hotel.java → Class untuk mengelola daftar kamar dan menghitung total biaya
+└── Main.java → Class utama, berisi logika input, pemesanan, dan output hasil
+
+## Deskripsi Class
+
+### 1. Class `Kamar`
+- **Atribut:**  
+  `nomorKamar (int)`, `tipeKamar (String)`, `hargaPerMalam (double)`, `status (boolean)`  
+- **Method:**  
+  - `pesanKamar()` → Mengubah status kamar menjadi *dipesan*  
+  - `kosongkanKamar()` → Mengubah status kamar menjadi *kosong*  
+
+### 2. Class `Tamu`
+- **Atribut:**  
+  `nama (String)`, `durasiMenginap (int)`  
+- **Method:**  
+  - Constructor, getter, dan setter untuk mengatur data tamu  
+
+### 3. Class `Hotel`
+- **Atribut:**  
+  `ArrayList<Kamar> daftarKamar`  
+- **Method:**  
+  - `cariKamarKosong(String tipe)` → Mencari kamar kosong berdasarkan tipe  
+  - `hitungTotalBayar(Tamu t, Kamar k)` → Menghitung total biaya = durasi × harga  
+
+### 4. Class `Main`
+- Menggunakan **Scanner** untuk input data tamu dan tipe kamar (1=Standar, 2=Deluxe, 3=Suite)  
+- Menampilkan **total harga** setelah pemesanan berhasil  
+- Menunjukkan daftar kamar yang **sudah dipesan** dan **masih kosong**
+
+## Cara Menjalankan Program
 
