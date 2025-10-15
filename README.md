@@ -1,16 +1,19 @@
 # SISTEM PEMESANAN KAMAR HOTEL
 Hotel ingin membuat sistem untuk mengelola pemesanan kamar oleh tamu dengan berbagai tipe kamar.
+
 ## Anggota Kelompok
 1. Ahmad Najib Ramadhan	(G1A025022)
 2. M. Daffa  Atallah Putra	(G1A025044)
 3. Aurel Clara Belinda Putri	(G1A025070)
 4. Fidel Castro Praja Pratma	(G1A025102)
+   
 ## Daftar isi
 1. [Overview Sistem](#overview-sistem)
 2. [Tools dan Teknologi](#tools-dan-teknologi)
 3. [Fitur Sistem](#fitur-sistem)
 4. [Struktur Program](#struktur-program)
 5. [Cara Menjalankan Program](#cara-menjalankan-program)
+   
 ## Overview Sistem
 Program ini merupakan simulasi sederhana untuk mengelola pemesanan kamar hotel menggunakan konsep Pemrograman Berorientasi Objek (OOP) di Java. Sistem ini terdiri dari empat kelas utama: Kamar, Tamu, Hotel, dan Main. 
 1. Class Kamar :
@@ -21,15 +24,18 @@ Program ini merupakan simulasi sederhana untuk mengelola pemesanan kamar hotel m
   Menyimpan daftar semua kamar dalam bentuk ArrayList. Untuk mencari kamar berdasarkan tipe (Standar, Deluxe, Suite). Menghitung total biaya menginap berdasarkan durasi dan harga kamar per malam.
 4. Main :
    Berfungsi sebagai pusat eksekusi program. Menggunakan Scanner agar pengguna dapat menginput data sendiri, seperti nama tamu, durasi menginap, dan pilihan tipe kamar (1 untuk Standar, 2 untuk Deluxe, 3 untuk Suite). Setelah pemesanan berhasil, program menampilkan total harga yang harus dibayar dan daftar kamar yang sudah dipesan maupun yang masih kosong.
+   
 ### Fungsi Utama Program
 1. Menampilkan daftar kamar hotel dengan tipe dan harga berbeda.
 2. Memungkinkan pengguna memilih tipe kamar menggunakan angka (1–3).
 3. Menghitung total biaya secara otomatis setelah pemesanan.
 4. Menunjukkan status kamar (kosong / sudah dipesan).
+   
 ## Tools dan Teknologi
 - Visual Studio Code
 - Java JDK 21
 - Terminal
+  
 ## Fitur Sistem
 - Mengelola Data Kamar Hote
 - Mencatat Data Tamu
@@ -73,4 +79,106 @@ src/
 - Menunjukkan daftar kamar yang **sudah dipesan** dan **masih kosong**
 
 ## Cara Menjalankan Program
+1. Pastikan **Java JDK 21** sudah terpasang.  
+2. Buka folder proyek di **Visual Studio Code**.  
+3. Jalankan perintah berikut di **Git Bash / Terminal**:
+```bash
+javac Main.java
+java Main
+```
+
+### Contoh Output
+```
+=== SISTEM PEMESANAN KAMAR HOTEL ===
+1. Tampilkan semua kamar
+2. Pesan kamar
+3. Tampilkan kamar kosong
+4. Tampilkan kamar dipesan
+5. Keluar
+Pilih menu (1-5): 1
+Kamar No: 101 | Tipe: Standard | Harga: Rp300000.0 | Status: Kosong
+Kamar No: 102 | Tipe: Deluxe | Harga: Rp450000.0 | Status: Kosong
+Kamar No: 103 | Tipe: Suite | Harga: Rp700000.0 | Status: Kosong
+Kamar No: 104 | Tipe: Standard | Harga: Rp300000.0 | Status: Kosong
+Kamar No: 105 | Tipe: Deluxe | Harga: Rp450000.0 | Status: Kosong
+
+=== SISTEM PEMESANAN KAMAR HOTEL ===
+1. Tampilkan semua kamar
+2. Pesan kamar
+3. Tampilkan kamar kosong
+4. Tampilkan kamar dipesan
+5. Keluar
+Pilih menu (1-5): 2
+Masukkan nama tamu: Rendy
+Masukkan durasi menginap (malam): 2
+
+Pilih tipe kamar:
+1. Standard (Rp300.000/malam)
+2. Deluxe (Rp450.000/malam)
+3. Suite (Rp700.000/malam)
+Masukkan pilihan (1-3): 3
+
+PEMESANAN BERHASIL!
+-------------------------------
+Nama Tamu   : Rendy
+Tipe Kamar  : Suite
+Nomor Kamar : 103
+Harga / Malam : Rp700.000,00
+Durasi Menginap : 2 malam
+-------------------------------
+Total Bayar : Rp1.400.000,00
+
+=== SISTEM PEMESANAN KAMAR HOTEL ===
+1. Tampilkan semua kamar
+2. Pesan kamar
+3. Tampilkan kamar kosong
+4. Tampilkan kamar dipesan
+5. Keluar
+Pilih menu (1-5): 2
+Masukkan nama tamu: Yanto
+Masukkan durasi menginap (malam): 4
+
+Pilih tipe kamar:
+1. Standard (Rp300.000/malam)
+2. Deluxe (Rp450.000/malam)
+3. Suite (Rp700.000/malam)
+Masukkan pilihan (1-3): 3
+Maaf, kamar tipe Suite sudah penuh!
+Silakan pilih tipe kamar lain!!!
+
+=== SISTEM PEMESANAN KAMAR HOTEL ===
+1. Tampilkan semua kamar
+2. Pesan kamar
+3. Tampilkan kamar kosong
+4. Tampilkan kamar dipesan
+5. Keluar
+Pilih menu (1-5): 3
+
+=== Daftar Kamar Kosong ===
+Kamar No: 101 | Tipe: Standard | Harga: Rp300000.0 | Status: Kosong
+Kamar No: 102 | Tipe: Deluxe | Harga: Rp450000.0 | Status: Kosong
+Kamar No: 104 | Tipe: Standard | Harga: Rp300000.0 | Status: Kosong
+Kamar No: 105 | Tipe: Deluxe | Harga: Rp450000.0 | Status: Kosong
+
+=== SISTEM PEMESANAN KAMAR HOTEL ===
+1. Tampilkan semua kamar
+2. Pesan kamar
+3. Tampilkan kamar kosong
+4. Tampilkan kamar dipesan
+5. Keluar
+Pilih menu (1-5): 4
+
+=== Daftar Kamar Dipesan ===
+Kamar No: 103 | Tipe: Suite | Harga: Rp700000.0 | Status: Dipesan
+
+=== SISTEM PEMESANAN KAMAR HOTEL ===
+1. Tampilkan semua kamar
+2. Pesan kamar
+3. Tampilkan kamar kosong
+4. Tampilkan kamar dipesan
+5. Keluar
+Pilih menu (1-5): 5
+Terima kasih telah menggunakan sistem ini!
+```
+
 
