@@ -35,13 +35,15 @@ Program ini merupakan simulasi sederhana untuk mengelola pemesanan kamar hotel m
 - Mencatat Data Tamu
 - Melakukan Pemesanan Kamar
 - Menghitung Total Biaya Menginap
-- Menampilkan Daftar Kamar dan Statusnya 
-## Struktur Program
+- Menampilkan Daftar Kamar dan Statusnya
+  
+```## Struktur Program
 src/
 ├── Kamar.java → Class untuk menyimpan data kamar (nomor, tipe, harga, status)
 ├── Tamu.java → Class untuk menyimpan data tamu (nama, durasi menginap)
 ├── Hotel.java → Class untuk mengelola daftar kamar dan menghitung total biaya
 └── Main.java → Class utama, berisi logika input, pemesanan, dan output hasil
+```
 
 ## Deskripsi Class
 
